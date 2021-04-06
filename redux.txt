@@ -1,0 +1,12 @@
+the purpose of redux middleware is to intercept an action before
+it reaches the reducer
+
+when a user interacts with the app and they click a button it will trigger
+the ui to dispatch an action
+instead of sending the action directly to the reducer, we send it to the middleware 
+
+middleware sits in between the dispatching of the action and the reducer
+once the middleware gets the action object - it has the freedom to do
+that it once - performs extra logic etc.
+
+middleware is a function that returns another function
